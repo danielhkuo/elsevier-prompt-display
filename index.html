@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsevier AI Prompt Templates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Elsevier Logo" class="logo">
+    <nav>
+        <button class="tab-button active" data-tab="business-operations">Business Operations</button>
+        <button class="tab-button" data-tab="enterprise-delivery">Enterprise Delivery Operations</button>
+        <button class="tab-button" data-tab="enterprise-revenue">Enterprise Revenue Operations</button>
+        <button class="tab-button" data-tab="sales-operations">Sales Operations</button>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div id="business-operations" class="tab-content active">
+            <div class="template-grid" id="business-operations-templates"></div>
+        </div>
+        <div id="enterprise-delivery" class="tab-content">
+            <div class="template-grid" id="enterprise-delivery-templates"></div>
+        </div>
+        <div id="enterprise-revenue" class="tab-content">
+            <div class="template-grid" id="enterprise-revenue-templates"></div>
+        </div>
+        <div id="sales-operations" class="tab-content">
+            <div class="template-grid" id="sales-operations-templates"></div>
+        </div>
+    </div>
+</main>
+
+<div class="modal" id="details-modal">
+    <div class="modal-content">
+        <ul id="details-list"></ul>
+        <button class="close-btn">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
