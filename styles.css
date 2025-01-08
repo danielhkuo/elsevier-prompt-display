@@ -50,19 +50,24 @@ nav {
     display: block;
 }
 
+/* Template Grid: Allow items to span rows as needed */
 .template-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between grid items */
+    align-items: start; /* Ensure items align at the top of the grid */
 }
 
 .template-card {
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px; /* Reduce padding to minimize spacing */
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: auto; /* Allow height to adjust to content */
 }
 
 .template-card:hover {
@@ -87,26 +92,26 @@ nav {
 
 .template-card pre {
     background: #f5f5f5;
-    padding: 10px; /* Reduce padding inside the code block */
+    padding: 10px;
     margin: 0;
-    margin-bottom: 30px;
-    font-family: monospace; /* Ensure the text looks like code */
-    font-size: 14px; /* Adjust font size for better readability */
+    font-family: monospace;
+    font-size: 14px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    white-space: pre-wrap; /* Ensure long text wraps */
+    word-wrap: break-word; /* Break long words if necessary */
+    flex-grow: 1; /* Allow the content to take up available space */
 }
 
-/* Details Ribbon */
 .details-ribbon {
     background: #004d91;
     color: white;
     text-align: center;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 10px; /* Adjust padding for better spacing */
     cursor: pointer;
+    margin-top: 10px; /* Add spacing between content and the ribbon */
+    border-radius: 5px 5px 5px 5px;
+    position: static; /* Ensure it stays in the flow of the document */
 }
 
 /* Modal Styles */

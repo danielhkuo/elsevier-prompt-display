@@ -31,8 +31,8 @@ const templates = {
     ],
     'sales-operations': [
         {
-            text: "Draft a follow-up email template for prospective clients.",
-            details: ["Specify client type.", "Highlight key offerings."]
+            text: "Create a plain-text guide for {{a sales process}} by breaking it into clear steps. Include helpful tips or warnings where necessary. {{step details}}. Additional Information: {{Tips or warnings}}",
+            details: ["Sales process: Provide the name and a brief description (e.g., \"Order approval process\" or ‘’Submitting a new client order’’).", "Step details: Write each step in plain text (e.g., \"Step 1: Sales rep completes the form\").", "Tips or warnings: Add simple advice (e.g., \"Ensure all required fields are filled\")."]
         },
         {
             text: "Provide a summary of lead conversion rates by region.",
@@ -87,7 +87,6 @@ document.body.addEventListener("click", event => {
     if (event.target.classList.contains("copy-btn")) {
         const text = event.target.dataset.text;
         navigator.clipboard.writeText(text)
-            .then(() => alert("Copied!"))
             .catch(err => console.error("Copy failed:", err));
     }
 });
