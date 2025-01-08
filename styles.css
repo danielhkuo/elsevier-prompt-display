@@ -114,6 +114,23 @@ nav {
     position: static; /* Ensure it stays in the flow of the document */
 }
 
+/* Details Modal List Styling */
+#details-list {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#details-list li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+#details-list strong {
+    color: #004d91; /* Highlight the bolded header text */
+}
+
 /* Modal Styles */
 .modal {
     display: none;
@@ -149,4 +166,9 @@ nav {
 
 .close-btn:hover {
     background: #004d91;
+}
+
+/* Highlighted text within code blocks */
+.highlight {
+    color: #ff6347; /* Change this to your desired color */
 }
