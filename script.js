@@ -55,6 +55,30 @@ const templates = {
                 "Step details": "Write each step in plain text (e.g., \"Step 1: Sales rep completes the form\").",
                 "Tips or warnings": "Add simple advice (e.g., \"Ensure all required fields are filled\")."
             }
+        },
+        {
+            text: "List the key processes within the {{Sales Operations workflow}} and highlight any {{issues}} prone to delays or inaccuracies. Suggest measurable {{KPIs}} and improvements in plain text.",
+            details: {
+                "Sales Operations workflow": "Sequential process\n\"Step 1: Process incentive compensation calculations\".",
+                "Identified issues": "Describe common challenges\n\"Frequent errors in incentive calculations\" or \"Delays in contract validation\".",
+                "KPIs": "Define specific, measurable indicators\n\"Time to complete compensation calculations\" or \"Accuracy of contract validation\"."
+            }
+        },
+        {
+            text: "Summarize the key incentive payout rules for the sales team based on the {{individual sales performance}} and {{team-level achievements}}. Clearly list payout thresholds and explain how bonuses or penalties apply: {{Payout rules}}.",
+            details: {
+                "Individual sales performance": "Enter details as plain text\n\"Revenue: $50,000; Quota: $40,000\" or \"Exceeds quota by 10%\".",
+                "Team-level achievements": "Provide descriptions in plain text\n\"Upselling rate: 15%; Target: 10%\" or \"Achieved cross-selling goal\".",
+                "Payout rules": "Copy rules directly from the policy document."
+            }
+        },
+        {
+            text: "Draft a basic sales contract using {{client details}} and {{product/service details}}. Include {{key terms}}.",
+            details: {
+                "Client details": "\"Company Name: XYZ, Contact: Jane Doe, Retail Industry\".",
+                "Product/service details": "Write out specifics\n\"Item: Annual subscription; Cost: $5,000/year\".",
+                "Key terms": "Copy standard legal terms\n\"Cancellation: 30 days notice\", or from templates or prior contracts."
+            }
         }
     ]
 };
@@ -65,7 +89,7 @@ function renderTemplates(tab, containerId) {
     container.innerHTML = ""; // Clear content
     if (templates[tab]) {
         templates[tab].forEach(template => {
-            const highlightedText = template.text.replace(/{{(.*?)}}/g, '{{<span class="highlight">$1</span>}}');
+            const highlightedText = template.text.replace(/{{(.*?)}}/g, '<span class="highlight">{{$1}}</span>');
             const card = document.createElement("div");
             card.className = "template-card";
             card.innerHTML = `
