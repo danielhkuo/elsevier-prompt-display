@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background: #004d91;
+    background: #404040;
 }
 
 header .logo {
@@ -28,14 +28,14 @@ nav {
     flex: 1;
     padding: 12px;
     color: white;
-    background: #0070c0;
+    background: #949494;
     border: none;
     cursor: pointer;
     text-align: center;
 }
 
 .tab-button.active {
-    background: #004d91;
+    background: #595959;
 }
 
 .content {
@@ -59,7 +59,7 @@ nav {
 }
 
 .template-card {
-    background: white;
+    background: #cacaca;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -104,7 +104,7 @@ nav {
 }
 
 .details-ribbon {
-    background: #004d91;
+    background: #ff8400;
     color: white;
     text-align: center;
     padding: 10px; /* Adjust padding for better spacing */
@@ -128,7 +128,7 @@ nav {
 }
 
 #details-list strong {
-    color: #004d91; /* Highlight the bolded header text */
+    color: #ff4203; /* Highlight the bolded header text */
 }
 
 /* Modal Styles */
@@ -155,7 +155,7 @@ nav {
 }
 
 .close-btn {
-    background: #0070c0;
+    background: #ff8400;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -165,10 +165,10 @@ nav {
 }
 
 .close-btn:hover {
-    background: #004d91;
+    background: #ee7a00;
 }
 
 /* Highlighted text within code blocks */
 .highlight {
-    color: #ff6347; /* Change this to your desired color */
+    color: #ff4203; /* Change this to your desired color */
 }
