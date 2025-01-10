@@ -3,51 +3,51 @@ const templates = {
         {
             text: "Outline the key steps in the {{BI and CRM optimization workflow}} and identify {{challenges}} and inefficiencies. Propose measurable {{KPIs}} to evaluate performance, and provide recommendations to improve workflows and align with business objectives.",
             details: {
-                "BI and CRM optimization workflow": "List each step in the process in a clear and sequential manner (e.g., \"Step 1: Develop Tableau dashboards; Step 2: Validate data; Step 3: Generate sales pipeline reports\").",
-                "challenges": "Highlight bottlenecks or inefficiencies that hinder the process (e.g., \"Frequent dashboard revisions\" or \"Slow data QA resolution\").",
-                "KPIs": "Define measurable indicators to evaluate performance and improvements (e.g., \"Dashboard delivery time\" or \"Salesforce adoption rate\")."
+                "BI and CRM optimization workflow": "Provide a step-by-step description of how the process currently works (e.g., 'Step 1: Extract data from CRM; Step 2: Build reports in BI tool; Step 3: Share reports with stakeholders').",
+                "challenges": "Describe specific problems or inefficiencies encountered in the workflow (e.g., 'Data inconsistencies delay report generation').",
+                "KPIs": "Define measurable metrics to assess performance (e.g., 'Average time to generate reports, percentage of errors in data extraction')."
             }
         },
         {
             text: "Summarize the current {{Tableau dashboard development process}} and suggest improvements to enhance timeliness, accuracy, and usability. Identify areas prone to delays or {{challenges}}, and highlight specific {{areas for improvement}} to optimize the process.",
             details: {
-                "Tableau dashboard development process": "Describe the current steps followed in the dashboard development process (e.g., \"Step 1: Collect stakeholder requirements; Step 2: Data extraction; Step 3: Dashboard design and feedback\").",
-                "challenges": "Identify challenges or bottlenecks faced in the process (e.g., \"Manual data updates cause delays; feedback often includes missing metrics\").",
-                "areas for improvement": "Highlight steps or stages where improvements could be made (e.g., \"Improve data integration to reduce development time\" or \"Standardize feedback to minimize revisions\")."
+                "Tableau dashboard development process": "Explain the sequence of steps followed to create dashboards (e.g., 'Gather data requirements, design dashboards, and share for feedback').",
+                "challenges": "Point out delays, inefficiencies, or roadblocks in the process (e.g., 'Data refreshes are manual, causing delays; stakeholders find dashboards hard to interpret').",
+                "areas for improvement": "List opportunities to improve the process (e.g., 'Automate data refreshes; provide training for better dashboard usage')."
             }
         },
         {
             text: "Evaluate the current {{data QA process}} and design an automated system to improve error detection and resolution. Highlight key {{data sources}}, common {{error types}}, and {{challenges}} that could streamline the process.",
             details: {
-                "data QA process": "Describe the current steps in your data quality assurance process (e.g., \"Manual data validation checks after data import\").",
-                "data sources": "List the data sources currently in use (e.g., \"Salesforce, financial databases, HR records\").",
-                "error types": "Describe common data quality issues encountered (e.g., \"Missing fields, duplicates in customer records, calculation errors\").",
-                "challenges": "Identify pain points or inefficiencies in the existing process (e.g., \"Manual error detection leads to delays in identifying discrepancies; inconsistency in data across systems\")."
+                "data QA process": "Detail the current methods for ensuring data quality (e.g., 'Manually check for missing fields or duplicates').",
+                "data sources": "List the systems or databases where data originates (e.g., 'Salesforce, financial software, HR system').",
+                "error types": "Describe typical data issues encountered (e.g., 'Incorrect formatting, duplicate entries').",
+                "challenges": "Mention inefficiencies or obstacles in maintaining data quality (e.g., 'Manual checks are time-consuming; cross-departmental communication delays resolution')."
             }
         },
         {
             text: "Evaluate the {{current Salesforce workflows}} to identify inefficiencies and areas for improvement. Focus on addressing delays, uncovering {{automation opportunities}} to reduce {{manual tasks}}, and incorporating {{user feedback}} to enhance efficiency and user experience.",
             details: {
-                "current Salesforce workflows": "Describe the key workflows currently in place (e.g., \"Lead routing, approval workflows, reporting processes\").",
-                "automation opportunities": "List tasks that can be automated to improve efficiency (e.g., \"Automating lead assignment to reduce manual intervention\").",
-                "manual tasks": "Highlight tasks that are currently being done manually (e.g., \"Data entry, report generation\").",
-                "user feedback": "Include feedback or complaints from users (e.g., \"Users report frequent delays in approval workflows and a lack of custom reporting options\")."
+                "current Salesforce workflows": "Summarize the primary workflows in Salesforce (e.g., 'Lead assignment, opportunity tracking, report generation').",
+                "automation opportunities": "List tasks that could benefit from automation (e.g., 'Automatically assign leads to sales reps based on geography').",
+                "manual tasks": "Highlight repetitive manual processes (e.g., 'Manual data entry into Salesforce records').",
+                "user feedback": "Share common feedback from Salesforce users (e.g., 'Reports are hard to customize; approval workflows are slow')."
             }
         },
         {
             text: "Review the {{sales pipeline reporting process}} by identifying {{issues}} and {{areas prone to inaccuracies or delays}}. Suggest improvements to optimize the process.",
             details: {
-                "sales pipeline reporting process": "Provide the steps in the pipeline reporting process (e.g., \"Step 1: Extract data from Salesforce; Step 2: Segment by pipeline stage\").",
-                "issues": "List challenges encountered in the process (e.g., \"Data formatting inconsistencies; delays in data retrieval\").",
-                "areas prone to inaccuracies/delays": "Identify stages where errors or delays occur (e.g., \"Manual data entry at segmentation stage; inconsistencies in tracking conversion rates\")."
+                "sales pipeline reporting process": "Outline the steps taken to create pipeline reports (e.g., 'Data export, pipeline segmentation, performance analysis').",
+                "issues": "Describe problems faced in the reporting process (e.g., 'Frequent mismatches between stages and actual status').",
+                "areas prone to inaccuracies or delays": "Highlight where errors or delays commonly occur (e.g., 'Manual data corrections take too long')."
             }
         },
         {
             text: "Evaluate the {{sales credit reporting process}} by reviewing {{issues}} and {{areas prone to inaccuracies or delays}}. Provide a step-by-step guide with recommendations for improvement.",
             details: {
-                "sales credit reporting process": "List the key steps in the credit reporting process (e.g., \"Step 1: Retrieve sales data; Step 2: Apply credit assignment rules\").",
-                "issues": "Describe challenges encountered (e.g., \"Duplicate credits; delays in credit approval\").",
-                "areas prone to inaccuracies/delays": "Highlight problem areas (e.g., \"Manual credit assignment leads to errors; delays in updating credit data\")."
+                "sales credit reporting process": "Describe the process for assigning and reporting sales credits (e.g., 'Track revenue by sales rep, apply credit allocation rules').",
+                "issues": "Identify common errors or problems (e.g., 'Duplicate credits assigned; incorrect revenue attribution').",
+                "areas prone to inaccuracies/delays": "Pinpoint problem steps (e.g., 'Manual updates delay accurate reporting')."
             }
         }
     ],
@@ -104,17 +104,44 @@ const templates = {
     ],
     'enterprise-revenue': [
         {
-            text: "Summarize revenue performance for the current fiscal quarter.",
+            text: "Create measurable KPIs for evaluating the efficiency of Enterprise Revenue Operations. Criteria: {{scheduling efficiency}} for in-person class training between nursing students and educators, {{effectiveness of matching}} educators to requested training times, accuracy and timeliness in distributing {{training materials}}, and cost and time efficiency in {{travel and expense reimbursements}} for contracted educators. Provide a rationale for each KPI and explain how it supports key processes.",
             details: {
-                "Revenue figures": "Include revenue figures.",
-                "Key drivers": "Highlight key drivers."
+                "scheduling efficiency": "Describe how efficiently training sessions are scheduled. Include any known issues or successes (e.g., \"Currently scheduled manually with a 10% error rate\").",
+                "effectiveness of matching": "Explain how well educators' availability aligns with requested times (e.g., \"Educators are matched manually, with mismatches in 25% of cases\").",
+                "training materials": "Provide details on how materials are distributed and any delays or errors (e.g., \"Materials are shipped weekly; rural areas experience a 15% delay\").",
+                "travel and expense reimbursements": "Describe how travel reimbursements are handled, including delays or inefficiencies (e.g., \"Manual approvals take 3 weeks to process\")."
             }
         },
         {
-            text: "Analyze trends in recurring revenue streams.",
+            text: "Analyze the current {{Enterprise Revenue Operations metrics}} and {{challenges}} in evaluating operational efficiency, focusing on {{billing accuracy, cohort verification, and inquiry resolution}}. Criteria: Current metrics and alignment with revenue operations goals, and accuracy and timeliness in billing processes.",
             details: {
-                "Historical data": "Provide historical data.",
-                "Growth rates": "Summarize growth rates."
+                "Enterprise Revenue Operations metrics": "List the key metrics currently used to measure revenue operations (e.g., \"Invoice accuracy rate, average inquiry resolution time\").",
+                "challenges": "Describe obstacles that make operations less efficient (e.g., \"Cohort verification delays cause billing errors\").",
+                "billing accuracy, cohort verification, and inquiry resolution": "Explain how these specific aspects are tracked or could be improved (e.g., \"Billing accuracy is measured by invoice error rate; inquiry resolution takes longer than SLA targets\")."
+            }
+        },
+        {
+            text: "Analyze the current {{invoice creation process}} and {{challenges}} to propose more efficient workflows using {{automation and best practices}}. Criteria: Integration with customer expectations and reduction of errors.",
+            details: {
+                "invoice creation process": "Describe the steps followed to create invoices (e.g., \"Invoices are created manually, often leading to errors\").",
+                "challenges": "Identify issues in the process that cause delays or inaccuracies (e.g., \"Incomplete product data causes delays\").",
+                "automation and best practices": "Suggest tools or best practices that could streamline the process (e.g., \"Use automated invoicing software to reduce errors\")."
+            }
+        },
+        {
+            text: "Analyze the current {{customer billing support process}} and {{challenges}} to design improvements for {{faster resolution times and customer satisfaction}}.",
+            details: {
+                "customer billing support process": "Outline how billing inquiries are currently handled (e.g., \"Handled manually via email with no prioritization\").",
+                "challenges": "Describe common issues that slow down the process or frustrate customers (e.g., \"Delayed responses due to lack of standardized templates\").",
+                "faster resolution times and customer satisfaction": "Provide suggestions for improving response times and customer experience (e.g., \"Implement a ticketing system to prioritize issues\")."
+            }
+        },
+        {
+            text: "Analyze the current {{cohort verification process}} and {{challenges}} to develop streamlined methods for {{accurate billing and error reduction}}.",
+            details: {
+                "cohort verification process": "Explain the steps used to verify cohorts (e.g., \"Counts are verified manually, leading to delays\").",
+                "challenges": "List common issues or pain points (e.g., \"Frequent miscommunication between departments causes errors\").",
+                "accurate billing and error reduction": "Suggest methods to improve accuracy and reduce errors (e.g., \"Standardize tracking systems for cohort data\")."
             }
         }
     ],
